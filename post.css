@@ -1,0 +1,63 @@
+.post {
+  border: none; /* Remove the default border */
+  margin-bottom: 30px;
+  padding: 25px;
+  border-radius: 8px;
+  background-color: #fff; /* Use a white background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: box-shadow 0.3s ease; /* Add a transition for the shadow */
+}
+
+.post:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance the shadow on hover */
+}
+
+.post header {
+  margin-bottom: 20px;
+  text-align: left; /* Align header text to the left */
+  border-bottom: 1px solid #eee; /* Add a subtle bottom border */
+  padding-bottom: 10px;
+}
+
+.post h2 {
+  margin-top: 0;
+  color: #222; /* Darker color for the title */
+  font-size: 1.75em; /* Larger font size for the title */
+  font-weight: 600; /* Semi-bold font weight */
+}
+
+.post-meta {
+  color: #666; /* Darker color for metadata */
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.post-content {
+  line-height: 1.7; /* Improved line height for readability */
+  margin-bottom: 20px;
+}
+
+.post-content p {
+  margin-bottom: 15px; /* Add spacing between paragraphs */
+}
+
+.post footer {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #555;
+  font-size: 0.9em;
+}
+
+.post-label a {
+  color: #007bff;
+  text-decoration: none;
+  margin-right: 10px;
+  transition: color 0.3s ease; /* Add transition for link color */
+}
+
+.post-label a:hover {
+  text-decoration: underline;
+  color: #0056b3; /* Darker color on hover */
+}

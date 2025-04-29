@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Zmods64 Modding</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="try.css">
+</head>
+<body>
+  
+  
+  <form style="color: white;">
+    <label for="Mod Type">Mods:</label>
+    <select name="Mods" id="Mods" onchange="redirectToPage(this.value)" style="color: black;">
+      <option value="">Select a Mod Type</option>
+      <option value="graphics" data-link="/graphics_mods.html">Graphics</option>
+      <option value="retexture" data-link="/retexture_tools.html">Retexture</option>
+      <option value="effects" data-link="/cool_effects.html">Effects</option>
+      <option value="skins" data-link="/awesome_skins.html">Skins</option>
+    </select>
+    <p>
+  </form>
+  
+  <script>
+    function redirectToPage(selectedValue) {
+      if (selectedValue) {
+        const selectedOption = document.getElementById("Mods").querySelector(`option[value="${selectedValue}"]`);
+        const targetLink = selectedOption.getAttribute("data-link");
+        if (targetLink) {
+          window.location.href = targetLink;
+        } else {
+          console.warn(`No data-link attribute found for value: ${selectedValue}`);
+        }
+      }
+    }
+  </script>
+
+    <div style="text-align: center;">
+      <a href="try.html"> <img src="20230218_200707.png" alt="Centered Image" style="width:250px;height:60px;"> </a>
+      </div>
+      <div class="topnav">
+        <a class="active" href="try.html">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+      
+      <div style="padding-left:16px">
+      </div>
+    <h2>IV2SA Adapted SA_ProjectIV Timecyc</h2>
+    <p style="font-size:1vw;">3 months ago</p>
+    <p>
+      <div style="text-align: center;">
+        <div class="img-container">
+    <a href="test.png"><img src="test.png" alt="Centered Image" style="width:320px;height:144px;"></a>
+  </div>
+</div>
+    <p>SA_ProjectIV Timecyc Adapted to IV2SA also increased fog to cover up the slow loading of buildings (needs SkyGFX).</p>
+    <div style="text-align: center;">
+      <div class="img-container">
+    <a href="test1.jpg"><img src="test1.jpg" alt="Centered Image" style="width:320px;height:144px;"></a>
+  </div>
+</div>
+    <p>Recommended Brightness setting is 30%</p>
+    <div style="text-align: center;">
+      <p><strong><em>Download</em></strong></p>
+    <button style="background-color: #4CAF50; /* Green */
+               color: white;
+               padding: 15px 32px;
+               text-align: center;
+               text-decoration: none;
+               display: inline-block;
+               font-size: 16px;
+               border: none;
+               cursor: pointer;"
+        onclick="document.location='https://modsfire.com/Wa072foP5qE8d6M'">Download</button>
+      </div>
+      <h2><strong><em>Videos:</em></strong></h2>
+      <div style="text-align: center;">
+        <iframe width="320" height="266" src="https://www.youtube.com/embed/3AUwV2aaYBY" title="GTA IV2SA Mobile 1.5 [Full Liberty City Map]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+</body>
+</html>
